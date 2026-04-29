@@ -5,21 +5,21 @@
 class PolymarketGo < Formula
   desc "Polymarket Go companion CLI"
   homepage "https://github.com/0xfakeSpike/polymarket-go"
-  version "1.0.9"
+  version "1.0.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.9/polymarket-go_1.0.9_darwin_x86_64.tar.gz"
-      sha256 "714114e53ed810fbbbf9fc8a536a40bfd04509fc1b955a1adef5f9e2b6680cce"
+      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.10/polymarket-go_1.0.10_darwin_x86_64.tar.gz"
+      sha256 "96850b421ae2f9f9f6c95c3bc31234f7071d59c64b81b48f3d9ac87b04532ba4"
 
       define_method(:install) do
         bin.install "pmctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.9/polymarket-go_1.0.9_darwin_arm64.tar.gz"
-      sha256 "227d8486f8c9a67fd13784f6f8bb581e6c579fe8356fe7beb936730ae5ad26b7"
+      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.10/polymarket-go_1.0.10_darwin_arm64.tar.gz"
+      sha256 "ebb0b8162f571cf5202ee9afc7b4f35ca9d5415ac76cbe8ba6e0c5146999f574"
 
       define_method(:install) do
         bin.install "pmctl"
@@ -29,15 +29,15 @@ class PolymarketGo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.9/polymarket-go_1.0.9_linux_x86_64.tar.gz"
-      sha256 "8a70dbe59c1ff99607806964a37a6137958a574eb06e618f9e98e4622eb05c5c"
+      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.10/polymarket-go_1.0.10_linux_x86_64.tar.gz"
+      sha256 "6075f99f85c1f45d2ffda2666c5212ac9960b9c93e6d5be2ecbb3199a52d630f"
       define_method(:install) do
         bin.install "pmctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.9/polymarket-go_1.0.9_linux_arm64.tar.gz"
-      sha256 "5a260e732c3cc3f74bd328f0c15c5510f00efa6c0eb554872b70e4134abb4f06"
+      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.10/polymarket-go_1.0.10_linux_arm64.tar.gz"
+      sha256 "fc62efff8614d3cc1f3b1280d9e6dd37dd42b28a23a8a0d656e54145ecf913bd"
       define_method(:install) do
         bin.install "pmctl"
       end
