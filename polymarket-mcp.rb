@@ -5,21 +5,21 @@
 class PolymarketMcp < Formula
   desc "Polymarket MCP stdio bridge"
   homepage "https://github.com/0xfakeSpike/polymarket-go"
-  version "1.0.12"
+  version "1.0.13"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.12/polymarket-go-mcp_1.0.12_darwin_x86_64.tar.gz"
-      sha256 "0279b1ace2b407645e49ce80a0990e8e3a010f471bcd532c7553b540c96caffd"
+      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.13/polymarket-go-mcp_1.0.13_darwin_x86_64.tar.gz"
+      sha256 "b313e708a80626b4878ad76c890913073cb2999c5e912ea019f4bcdec65f5a55"
 
       define_method(:install) do
         bin.install "polymarket-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.12/polymarket-go-mcp_1.0.12_darwin_arm64.tar.gz"
-      sha256 "a16d2dc6f90229d4b354d48bb350738bb3ea4cb86ba58e3bc94499c1ade2583b"
+      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.13/polymarket-go-mcp_1.0.13_darwin_arm64.tar.gz"
+      sha256 "f6c0e63fe85cf8480b2b95dd8931fd49b5737c1bf09c9e601063390d8de7463a"
 
       define_method(:install) do
         bin.install "polymarket-mcp"
@@ -29,15 +29,15 @@ class PolymarketMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.12/polymarket-go-mcp_1.0.12_linux_x86_64.tar.gz"
-      sha256 "1bf076d9b6eb10cfffba71f31fedbf954d0839d84565f727c345389499641a70"
+      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.13/polymarket-go-mcp_1.0.13_linux_x86_64.tar.gz"
+      sha256 "a19d80b2b7a2d9744bcdc2527ee761773c15400a623d6bc47494f455b1eee663"
       define_method(:install) do
         bin.install "polymarket-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.12/polymarket-go-mcp_1.0.12_linux_arm64.tar.gz"
-      sha256 "7714a998aee56491fe52456b763392e818661527c8269df8c6acb42c397d41a4"
+      url "https://github.com/0xfakeSpike/polymarket-go/releases/download/v1.0.13/polymarket-go-mcp_1.0.13_linux_arm64.tar.gz"
+      sha256 "668cbe4f4cad90f1ca75f41f6fd1b30e83e9f4c1f6bdedef3c1a89ccbb81c9fc"
       define_method(:install) do
         bin.install "polymarket-mcp"
       end
