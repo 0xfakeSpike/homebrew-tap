@@ -4,8 +4,8 @@
 class Kggraph < Formula
   desc "Knowledge graph CLI and MCP server for agents"
   homepage "https://github.com/OctoSucker/KGgraph"
-  url "https://github.com/OctoSucker/KGgraph/archive/refs/tags/v0.2.3.tar.gz"
-  sha256 "2592be2361fb976afa8d07e06071002a95c10569762ee49e599531473138c7d3"
+  url "https://github.com/OctoSucker/KGgraph/archive/refs/tags/v0.2.4.tar.gz"
+  sha256 "c0743b1f2eba567761e9cfaaa02276ccb36aa6003a31823173004fa5974c3332"
   license "MIT"
 
   depends_on "go" => :build
